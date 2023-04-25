@@ -21,6 +21,6 @@
 * コミット git commit -m "lecture02 commit"
 * プッシュ git push -u origin lecture02
 
-####リモートリポジトリーでの作業
+#### リモートリポジトリーでの作業
 * pull request
 * merge
