@@ -26,9 +26,12 @@ Use Ctrl-C to stop
 Exiting
 ```
 - APサーバーを終了させた場合、アクセスはできない。以下の画面が表示される。
-![picture 3](images/52cdec20b1a8afe038a83658d53941ac63174a898d0f87f63cec66ca11d9da49.png)  
+![picture 2](images/52cdec20b1a8afe038a83658d53941ac63174a898d0f87f63cec66ca11d9da49.png)  
+
+ 
 - APサーバーを起動してアクセスすると、以下の画面が表示される。
-![picture 4](images/09e82b32ec76ed18d317bfcea257fd07f185461640554e04ccea6f4104d2deb7.png)  
+![picture 3](images/09e82b32ec76ed18d317bfcea257fd07f185461640554e04ccea6f4104d2deb7.png)  
+
 
 ## DBサーバーについて調べる
 - サンプルアプリケーションで使ったDBサーバーの名前は、MySQL。
@@ -51,7 +54,7 @@ mysql  Ver 8.0.33 for Linux on x86_64 (MySQL Community Server - GPL)
 sudo service mysqld stop
 ```
 以下の画像は、DBサーバを停止した後にアクセスした時の画像。アクセスできない。ソケットがないというエラーが出ている。
-![picture 5](images/468d068bef5a52f5cfe1e6611df3eb90f7cb5fcc8350b2a909b115b5e4e909f9.png)  
+![picture 1](images/468d068bef5a52f5cfe1e6611df3eb90f7cb5fcc8350b2a909b115b5e4e909f9.png)  
 
 ## Railsの構成管理ツールの名前
 今回使用したツールはBundler。
@@ -63,8 +66,11 @@ sudo service mysqld stop
 
 ## 参考リンク
 [Cloud9のMySQLをバージョンアップする方法 - Qiita](https://qiita.com/takahashitakuya031126/items/5ce3edc499a161c02a1e):MySQLについてのページ
+
 [【AWS/cloud9】SQL起動方法と簡単な使い方 - Qiitas](https://qiita.com/takahashiryoma/items/b405a17836cb58fd149d):MySQLについてのページ
+
 [【Ruby】 gemの仕組みを図解形式で学ぼう | Pikawaka](https://pikawaka.com/ruby/how-gem-works):gemについてのページ
+
 [【Rails】 結局bundlerって何？bundlerの仕組みを図解形式で徹底解説 | Pikawaka](https://pikawaka.com/rails/bundler):Bundlerについてのページ
 
 
