@@ -66,8 +66,11 @@ sudo service mysqld stop
 
 ## 参考リンク
 [Cloud9のMySQLをバージョンアップする方法 - Qiita](https://qiita.com/takahashitakuya031126/items/5ce3edc499a161c02a1e):MySQLについてのページ
+
 [【AWS/cloud9】SQL起動方法と簡単な使い方 - Qiitas](https://qiita.com/takahashiryoma/items/b405a17836cb58fd149d):MySQLについてのページ
+
 [【Ruby】 gemの仕組みを図解形式で学ぼう | Pikawaka](https://pikawaka.com/ruby/how-gem-works):gemについてのページ
+
 [【Rails】 結局bundlerって何？bundlerの仕組みを図解形式で徹底解説 | Pikawaka](https://pikawaka.com/rails/bundler):Bundlerについてのページ
 
 
