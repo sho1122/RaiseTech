@@ -76,7 +76,8 @@
 ### EC2を作成
 ![picture 17](images/606a08c5629e0bbefa72ae1d04168ab14f2405ca53ede5477a514ec9082ff04c.png)  
 
-![picture 18](images/696ee500799f1eadc380d46e3785c24fb7ffacbe3e66bc10da16fdb13fe49118.png)  
+![picture 24](images/35d832db60417476543821ddc685733b0552b552be21e684d157d1e3c76e4df7.png)  
+
 
 EC2の作成時に行うこと
 + 名前を設定
@@ -147,4 +148,5 @@ mysql>
 
 ### 感想
 MySQLをインストールするのに手間取った。バージョンが合わなかったのが原因だった。無事インストールし、EC2からRDSの接続確認ができて良かった。今後は今回よりも複雑な構成になると思うので、慣れるように頑張っていきたい。
+
 <script src="https://blz-soft.github.io/md_style/release/v1.2/md_style.js" ></script>
