@@ -19,7 +19,3 @@ ALBのアクセスログをS3に保存するように設定。アクセスする
 
 ## 構成図に書き起こす
 ![picture 8](images/edf5b153241f0cc895642fed7595b57710a66e69a825659bec2670fe26e3e53e.png)  
-
-
-
-<script src="https://blz-soft.github.io/md_style/release/v1.2/md_style.js" ></script>
