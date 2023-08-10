@@ -2,22 +2,22 @@
 CloudFormation を利用して、現在までに作った環境をコード化する。
 
 + Cloudformationで作成したスタック
-![picture 0](images/9519ccc70f1122117d570609138991d3e44cda3909e70bb495ad6f14f6957f15.png)  
+![picture 0](images/stack.png)  
 
 + ALB
-![picture 1](images/12194e39d2c133785a4231dbdfe6745d055924d538150e1bd6e17af694caf7f2.png)  
+![picture 1](images/alb.png)  
 
 + RDS
-![picture 2](images/587cf78156efd68b44bebdc6b64b072943083aefcdb3e93108fb8561d4b61620.png)  
+![picture 2](images/rds.png)  
 
 + EC2
-![picture 3](images/3268dae50b619de306d7725e4aa35e182bb968660b9a5dfa70e0339defa33161.png)  
+![picture 3](images/ec2.png)  
 
 + VPC
-![picture 5](images/7ddaca2f144aa5d598f1872ae4bf735c269dd0e5d10e87ae1fa3b6083427264b.png)  
+![picture 5](images/vpc.png)  
 
 + S3
-![picture 4](images/3268dae50b619de306d7725e4aa35e182bb968660b9a5dfa70e0339defa33161.png)  
+![picture 4](images/s3.png)  
 
 ## 感想
 コードで環境が自動構築されるので便利だと思った。パラメータを設定したり、他のスタックに値を受け渡したりなどできることがわかった。
