@@ -1,0 +1,63 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Resources:
+  CeatantLogBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
+    Properties:
+      BucketName: !Sub "lec10-log"
+      LifecycleConfiguration:
+        Rules:
+          - Id: AutoDelete
+            Status: Enabled
+            ExpirationInDays: 365
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+
+  CeatantLogBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref CeatantLogBucket
+      PolicyDocument:
+        Id: AlblogsBucketPolicy
+        Version: "2012-10-17"
+        Statement:
+          - Sid: AWSConsoleStmt
+            Effect: Allow
+            Action: s3:PutObject
+            Resource: !Join
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref CeatantLogBucket
+                - '/*/AWSLogs/'
+                - !Ref AWS::AccountId
+                - '/*'
+            Principal:
+              AWS: "582318560864"
+          - Sid: AWSLogDeliveryWrite
+            Effect: Allow
+            Action: s3:PutObject
+            Resource: !Join
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref CeatantLogBucket
+                - '/*/AWSLogs/'
+                - !Ref AWS::AccountId
+                - '/*'
+            Principal:
+              Service: delivery.logs.amazonaws.com
+            Condition:
+              StringEquals:
+                s3:x-amz-acl: bucket-owner-full-control
+          - Sid: AWSLogDeliveryAclCheck
+            Effect: Allow
+            Action: s3:GetBucketAcl
+            Resource: !Join
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref CeatantLogBucket
+            Principal:
+              Service: delivery.logs.amazonaws.com
