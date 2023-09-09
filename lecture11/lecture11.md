@@ -61,7 +61,8 @@ end
 7. テストを実行
 ```
 rake spec
-```
-![picture 0](images/testResult.png)  
+``` 
+![picture 2](images/testresult.png)  
+
 
 <script src="https://blz-soft.github.io/md_style/release/v1.2/md_style.js" ></script>
