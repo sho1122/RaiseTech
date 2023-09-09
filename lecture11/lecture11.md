@@ -62,7 +62,6 @@ end
 ```
 rake spec
 ``` 
-![picture 2](images/testresult.png)  
-
+![picture 3](images/image.png)  
 
 <script src="https://blz-soft.github.io/md_style/release/v1.2/md_style.js" ></script>
